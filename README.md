@@ -21,6 +21,8 @@ This project focuses on predicting employee salaries using demographic and profe
 
 Age and race were explored during EDA but excluded from modeling due to redundancy, proxy behavior, and fairness considerations.
 
+---
+
 ## **Modeling Approach**
 
 1. **Data Cleaning & Feature Engineering**
@@ -38,6 +40,8 @@ Age and race were explored during EDA but excluded from modeling due to redundan
   - Linear Regression (baseline, interpretability)
   - Random Forest Regressor (non-linear modeling)
 
+---
+
 ## **Initial Model Performance Comparison (Baseline)**
 
 | Model | R² (Actual) | MAE (Salary) |
@@ -48,6 +52,8 @@ Age and race were explored during EDA but excluded from modeling due to redundan
 The linear model captured general trends but showed heteroscedasticity and systematic underestimation of high salaries.
 Random Forest reduced typical salary prediction error by ~63%, demonstrating superior handling of non-linear relationships and feature interactions.
 
+---
+
 ## **Business Interpretation**
 
 - Years of Experience is the strongest salary driver.
@@ -55,6 +61,8 @@ Random Forest reduced typical salary prediction error by ~63%, demonstrating sup
 - Education adds incremental value, especially at senior roles.
 - Country and gender show limited direct impact once job structure is considered.
 - The model delivers realistic salary estimates suitable for workforce planning, compensation benchmarking, and HR analytics.
+
+---
 
 ## **Project Conclusion**
 
@@ -64,6 +72,8 @@ Random Forest reduced typical salary prediction error by ~63%, demonstrating sup
 - Residual analysis confirmed reduced bias and improved generalization.
 - Model complexity was intentionally controlled to avoid overfitting.
 
+---
+
 ## **Limitations**
 
 - Observational dataset (no causal guarantees).
@@ -71,6 +81,8 @@ Random Forest reduced typical salary prediction error by ~63%, demonstrating sup
 - Random Forest offers limited interpretability compared to linear models.
 - Dataset covers limited geographic regions.
 - Real-world deployment would require monitoring and fairness audits.
+
+---
 
 ## **Tools & Libraries (Dependencies)**
 
@@ -80,6 +92,8 @@ Random Forest reduced typical salary prediction error by ~63%, demonstrating sup
 - Matplotlib
 - Seaborn
 - Scikit-learn
+
+---
 
 ## **How to Run**
 
@@ -98,6 +112,8 @@ cd Salary-Prediction
 jupyter notebook salary_prediction.ipynb
 ```
 
+---
+
 ## **Project Structure**
 ```
 ├── salary_prediction.ipynb
@@ -105,6 +121,8 @@ jupyter notebook salary_prediction.ipynb
 ├── Salary_Data.csv
 ├── README.md
 ```
+
+---
 
 ## **Author**
 
